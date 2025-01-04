@@ -17,7 +17,7 @@ const ProductCard = () => {
               alt={`Product ${index + 1}`}
               width={400}
               height={400}
-              className="object-cover w-full h-48 md:h-full"
+              className="object-cover w-full h-48 sm:h-64 md:h-full"
             />
           </div>
 

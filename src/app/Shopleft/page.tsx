@@ -5,12 +5,11 @@ import { IoGrid } from "react-icons/io5";
 import { FaListUl } from "react-icons/fa";
 import SidebarPage from "@/app/Shopleft/[sidebar]/page";
 
-
 const Shopleft = () => {
   return (
     <div className="w-full bg-white mt-10">
       {/* Header Section */}
-      <div className="w-full bg-[#F6F5FF] py-8 px-20">
+      <div className="w-full bg-[#F6F5FF] py-8 px-6 sm:px-10 md:px-20">
         <h2 className="text-[#101750] text-2xl md:text-4xl font-bold">
           Shop Left Sidebar
         </h2>
@@ -25,10 +24,10 @@ const Shopleft = () => {
         <div className="border-b bg-white pb-4 mb-4 mt-10 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
           {/* Title and Description */}
           <div>
-            <h1 className="text-lg md:text-xl font-semibold text-blue-900 px-10">
+            <h1 className="text-lg md:text-xl font-semibold text-blue-900 px-6 md:px-10">
               Ecommerce Accessories & Fashion Items
             </h1>
-            <p className="text-gray-600 text-sm mt-1 px-10">
+            <p className="text-gray-600 text-sm mt-1 px-6 md:px-10">
               About <span className="font-medium">9,620</span> results (0.62 seconds)
             </p>
           </div>
@@ -85,7 +84,9 @@ const Shopleft = () => {
           </div>
         </div>
       </div>
-    <SidebarPage />
+
+      <SidebarPage />
+
       {/* Brand Section */}
       <div className="rounded mt-20 border w-full sm:w-[904px] h-auto sm:h-[93px] mx-auto">
         <Image

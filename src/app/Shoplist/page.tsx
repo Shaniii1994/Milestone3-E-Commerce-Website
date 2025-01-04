@@ -68,17 +68,19 @@ const Shoplist = () => {
               <label className="text-gray-700 text-sm font-medium">View:</label>
               <div className="flex gap-2">
                 <button className="p-2 border rounded hover:bg-blue-100 focus:ring-2 focus:ring-blue-500">
-                  <span className="material-icons text-gray-700"><IoGrid /></span>
+                  <IoGrid className="text-gray-700" />
                 </button>
                 <button className="p-2 border rounded hover:bg-blue-100 focus:ring-2 focus:ring-blue-500">
-                  <span className="material-icons text-gray-700"><FaListUl /></span>
+                  <FaListUl className="text-gray-700" />
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <ShopCard />
+      <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <ShopCard />
+      </div>
     </div>
   );
 };
