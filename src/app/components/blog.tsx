@@ -32,9 +32,9 @@ const Blogs = () => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4">
         {/* Section Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 hover:text-pink-500">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 hover:text-pink-500 transition-colors">
           Latest Blog
         </h2>
 
@@ -43,7 +43,7 @@ const Blogs = () => {
           {blogs.map((blog) => (
             <div
               key={blog.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform"
+              className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300"
             >
               {/* Blog Image */}
               <Image
@@ -51,25 +51,25 @@ const Blogs = () => {
                 alt={blog.title}
                 width={400}
                 height={400}
-                className="md:h-64 object-cover"
+                className="object-cover w-full h-[200px] md:h-[300px]"
               />
 
               {/* Blog Content */}
-              <div className="p-4">
-                <div className="flex items-center text-sm text-gray-500 mb-2">
-                  <span className="mr-4 flex items-center">
-                    <i className="fas fa-user text-pink-500 mr-1"></i>
+              <div className="p-6">
+                <div className="flex items-center text-sm text-gray-500 mb-3">
+                  <span className="mr-6 flex items-center">
+                    <i className="fas fa-user text-pink-500 mr-2"></i>
                     {blog.author}
                   </span>
                   <span className="flex items-center">
-                    <i className="fas fa-calendar-alt text-yellow-500 mr-1"></i>
+                    <i className="fas fa-calendar-alt text-yellow-500 mr-2"></i>
                     {blog.date}
                   </span>
                 </div>
                 <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2 hover:text-pink-500">
                   {blog.title}
                 </h3>
-                <p className="text-gray-600 hover:text-pink-500 mb-4">
+                <p className="text-gray-600 hover:text-pink-500 mb-4 text-sm md:text-base">
                   {blog.description}
                 </p>
                 <Link

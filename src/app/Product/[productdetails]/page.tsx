@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ProductDetails = () => {
   return (
-    <div className="flex flex-col md:flex-row mt-10 gap-6 p-4 sm:p-6 lg:p-8 max-w-4xl mx-auto shadow-md border rounded-md bg-white">
+    <div className="flex flex-col md:flex-row mt-10 gap-6 p-4 sm:p-6 lg:p-8 max-w-5xl mx-auto shadow-lg border rounded-md bg-white">
       {/* Left Section: Thumbnails */}
       <div className="flex flex-row md:flex-col space-x-4 md:space-x-0 md:space-y-4 overflow-x-scroll md:overflow-visible">
         {["product1.jpg", "product2.jpg", "product3.jpg"].map((img, index) => (
@@ -14,7 +14,7 @@ const ProductDetails = () => {
             alt={`Thumbnail ${index + 1}`}
             width={400}
             height={400}
-            className="w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36 object-cover bg-gray-200 rounded-lg"
+            className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 object-cover bg-gray-200 rounded-md hover:scale-105 transition-transform"
           />
         ))}
       </div>
@@ -26,12 +26,12 @@ const ProductDetails = () => {
           alt="Main Product"
           width={400}
           height={400}
-          className="w-full h-64 sm:h-80 lg:h-[400px] object-cover bg-gray-200 rounded-lg"
+          className="w-full h-64 sm:h-80 lg:h-[400px] object-cover bg-gray-200 rounded-md"
         />
       </div>
 
       {/* Right Section: Product Details */}
-      <div className="flex-1 space-y-4">
+      <div className="flex-1 space-y-6">
         <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#0D134E]">
           Playwood Arm Chair
         </h2>
@@ -62,11 +62,13 @@ const ProductDetails = () => {
         </p>
 
         {/* Add to Cart */}
-        <div className="flex flex-wrap items-center space-x-2">
-          <button className="px-4 sm:px-6 py-2 text-sm sm:text-base bg-[#FB2E86] text-white rounded-md hover:bg-pink-600">
+        <div className="flex flex-wrap items-center space-x-4">
+          <button className="px-4 sm:px-6 py-2 text-sm sm:text-base bg-[#FB2E86] text-white rounded-md hover:bg-pink-600 transition duration-300">
             Add to Cart
           </button>
-          <span className="text-[#FB2E86] text-lg cursor-pointer">♡</span>
+          <span className="text-[#FB2E86] text-lg cursor-pointer hover:text-pink-600 transition">
+            ♡
+          </span>
         </div>
 
         {/* Meta Info */}
@@ -81,13 +83,22 @@ const ProductDetails = () => {
             <span className="font-semibold">Share:</span>
           </p>
           <div className="flex space-x-4">
-            <a href="#" className="text-blue-500 text-lg sm:text-xl">
+            <a
+              href="#"
+              className="text-blue-500 text-lg sm:text-xl hover:scale-110 transition-transform"
+            >
               <FaFacebook />
             </a>
-            <a href="#" className="text-pink-400 text-lg sm:text-xl">
+            <a
+              href="#"
+              className="text-pink-400 text-lg sm:text-xl hover:scale-110 transition-transform"
+            >
               <FaInstagram />
             </a>
-            <a href="#" className="text-blue-400 text-lg sm:text-xl">
+            <a
+              href="#"
+              className="text-blue-400 text-lg sm:text-xl hover:scale-110 transition-transform"
+            >
               <FiTwitter />
             </a>
           </div>

@@ -92,7 +92,8 @@ const Navbar = () => {
             )}
           </li>
           <li>
-            <Link href="/Product">Products</Link>
+            <Link href="/Product">
+            Products</Link>
           </li>
           <li>
             <Link href="/Blog">Blog</Link>
@@ -136,19 +137,13 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/ShoppingCart">Shopping Cart</Link>
-            </li>
-            <li>
               <Link href="/About">About Us</Link>
             </li>
             <li>
               <Link href="/GridDefault">Grid Default</Link>
             </li>
             <li>
-              <Link href="/ShopList">Shop List</Link>
-            </li>
-            <li>
-              <Link href="/ProductDetails">Products</Link>
+              <Link href="/Product">Products</Link>
             </li>
             <li>
               <Link href="/Blog">Blog</Link>
@@ -157,8 +152,25 @@ const Navbar = () => {
               <Link href="/Contact">Contact</Link>
             </li>
             <li>
-              <Link href="/ShopList">Shop</Link>
+              <Link href="/Shoplist">Shop</Link>
             </li>
+            <li>
+              <Link href="/ShoppingCart">Shopping Cart</Link>
+            </li>
+            <li>
+              <Link href="/Singleblog">Singleblog</Link>
+            </li>
+            <li>
+              <Link href="/HektoDemo">Hekto Demo</Link>
+            </li>
+            <li>
+              <Link href="/404NotFound">404NotFound</Link>
+            </li>
+            <li>
+              <Link href="/FAQ">FAQ</Link>
+            </li>
+         
+         
           </ul>
 
           {/* Mobile Search */}

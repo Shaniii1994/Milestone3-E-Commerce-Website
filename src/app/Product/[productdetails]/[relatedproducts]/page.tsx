@@ -56,7 +56,7 @@ const RelatedProducts = () => {
               className={`text-base sm:text-lg font-medium pb-2 ${
                 activeTab === tab.key
                   ? "text-[#151875] border-b-2 border-[#151875]"
-                  : "text-[#151875] opacity-60"
+                  : "text-[#151875] opacity-60 hover:opacity-100 transition-opacity"
               }`}
             >
               {tab.label}
@@ -126,7 +126,7 @@ const RelatedProducts = () => {
           {relatedProducts.map((product) => (
             <div
               key={product.id}
-              className="border rounded-lg p-4 hover:shadow-lg transition-shadow"
+              className="border rounded-lg p-4 hover:shadow-lg transition-shadow duration-300"
             >
               <Image
                 src={product.image}
@@ -135,7 +135,9 @@ const RelatedProducts = () => {
                 height={400}
                 className="w-full h-48 sm:h-56 lg:h-64 object-cover rounded-md mb-4"
               />
-              <h3 className="text-sm sm:text-base lg:text-lg font-semibold">{product.title}</h3>
+              <h3 className="text-sm sm:text-base lg:text-lg font-semibold text-[#151875]">
+                {product.title}
+              </h3>
               <p className="text-blue-600 font-bold">{product.price}</p>
               <div className="flex items-center mt-2">
                 {[...Array(5)].map((_, index) => (
