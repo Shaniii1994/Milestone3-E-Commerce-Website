@@ -66,7 +66,8 @@ const Singleblog = () => {
               
             </div>
           ))}
-           <div className="bg-white flex flex-col-2 shadow-lg rounded-lg overflow-hidden">
+
+        <div className="bg-white flex flex-col-2 shadow-lg rounded-lg overflow-hidden">
                       <Image
                         src="/singleblog1.jpg"
                         alt="Post 1"
@@ -81,9 +82,9 @@ const Singleblog = () => {
                         height={400}
                         className="w-full h-full object-cover"
                       />
-            </div>
+        </div>
           
-            <div className="bg-white flex flex-col-4 shadow-sm rounded-sm overflow-hidden">
+        <div className="bg-white flex flex-col-4 shadow-sm rounded-sm overflow-hidden">
                       <Image
                         src="/singleblog3.jpg"
                         alt="Quam sed"
@@ -113,8 +114,8 @@ const Singleblog = () => {
                         height={250}
                         className="object-cover"
                       />
-                </div>
             </div>
+          </div>
         </div>
 
         {/* Sidebar */}
@@ -216,14 +217,14 @@ const Singleblog = () => {
               </div>
         
             {/* Offer Product */}
-            <div className="mt-10 mb-6">
+          <div className="mt-10 mb-6">
           {/* Title */}
           <h3 className="text-lg font-semibold text-[#151875] mb-6">Offer Product</h3>
         
           {/* Product Grid */}
           <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-2">
           {/* Product 1 */}
-        <li className="text-justify">
+          <li className="text-justify">
           <Image
             src="/Products/blogpage11.jpg"
             alt="Duis lectus est."
@@ -299,7 +300,7 @@ const Singleblog = () => {
               </a>
             </div>
           </div>
-
+          
                 {/* Tags */}
                 <div className="mt-20 w-[228px] h-[64px] top-[2060px] left-[1297px] gap-[0px] opacity-[0px]">
                   <h3 className="text-lg font-semibold text-[#151875]">Tags</h3>
@@ -312,7 +313,7 @@ const Singleblog = () => {
             </div>
           </div>
         </aside>
-      
+      </div>
 
       {/* Comments Section */}
       <div className="bg-white p-6 mt-10 rounded-lg shadow-lg">
@@ -370,7 +371,7 @@ const Singleblog = () => {
       </div>
      </div>
   </div>
-</div>
+
 <div className="rounded mt-20 mb-10 border w-full sm:w-[904px] h-auto sm:h-[93px] mx-auto">
             <Image
               src="/brand.png"

@@ -169,8 +169,6 @@ const Navbar = () => {
             <li>
               <Link href="/FAQ">FAQ</Link>
             </li>
-         
-         
           </ul>
 
           {/* Mobile Search */}
