@@ -113,10 +113,8 @@ const Singleblog = () => {
                         height={250}
                         className="object-cover"
                       />
+                </div>
             </div>
-
-            </div>
-
         </div>
 
         {/* Sidebar */}
@@ -164,7 +162,6 @@ const Singleblog = () => {
                   <span className="text-[#3F509E] w-[250px] h-[51px] mx-2 top-[922px] left-[1297px] gap-[0px] opacity-[0px]">It is a long established fact</span>
                   <span className="text-[#8A8FB9] w-[174.31px] h-32px] top-[7px] left-[75.69px] gap-[0px] opacity-[0px]">Aug 09 2020</span></li>
                   
-        
                   <li className="inline-flex">
                   <Image src="/Products/blogpage6.jpg" 
                   alt="title"
@@ -174,7 +171,6 @@ const Singleblog = () => {
                   <span className="text-[#3F509E] w-[250px] h-[51px] mx-2 top-[922px] left-[1297px] gap-[0px] opacity-[0px]">It is a long established fact</span>
                   <span className="text-[#8A8FB9] w-[174.31px] h-32px] top-[7px] left-[75.69px] gap-[0px] opacity-[0px]">Aug 09 2020</span></li>
                   
-        
                   <li className="inline-flex">
                   <Image src="/Products/blogpage7.jpg" 
                   alt="title"
@@ -185,7 +181,6 @@ const Singleblog = () => {
                   <span className="text-[#8A8FB9] w-[174.31px] h-32px] top-[7px] left-[75.69px] gap-[0px] opacity-[0px]">Aug 09 2020</span></li>
                 </ul>
               </div>
-        
         
             {/* Sale Product */}
               <div className="w-[250px] h-[270px] top-[922px] left-[1297px] gap-[0px] mt-20 opacity-[0px] mb-6">
@@ -209,7 +204,6 @@ const Singleblog = () => {
                   <span className="text-[#3F509E] w-[250px] h-[51px] mx-2 top-[922px] left-[1297px] gap-[0px] opacity-[0px]">Viverra pulvinar et enim.</span>
                   <span className="text-[#8A8FB9] w-[174.31px] h-32px] top-[7px] left-[75.69px] gap-[0px] opacity-[0px]">Aug 09 2020</span></li>
                   
-        
                   <li className="inline-flex">
                   <Image src="/Products/blogpage10.jpg" 
                   alt="title"
@@ -305,7 +299,7 @@ const Singleblog = () => {
               </a>
             </div>
           </div>
-          
+
                 {/* Tags */}
                 <div className="mt-20 w-[228px] h-[64px] top-[2060px] left-[1297px] gap-[0px] opacity-[0px]">
                   <h3 className="text-lg font-semibold text-[#151875]">Tags</h3>
@@ -318,7 +312,7 @@ const Singleblog = () => {
             </div>
           </div>
         </aside>
-      </div>
+      
 
       {/* Comments Section */}
       <div className="bg-white p-6 mt-10 rounded-lg shadow-lg">
@@ -375,6 +369,7 @@ const Singleblog = () => {
         </form>
       </div>
      </div>
+  </div>
 </div>
 <div className="rounded mt-20 mb-10 border w-full sm:w-[904px] h-auto sm:h-[93px] mx-auto">
             <Image
@@ -384,7 +379,7 @@ const Singleblog = () => {
               height={400}
               className="w-full h-full object-contain"
             />
-    </div>
+</div>
 </div>
   );
 };
