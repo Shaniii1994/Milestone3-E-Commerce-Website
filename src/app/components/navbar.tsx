@@ -158,9 +158,6 @@ const Navbar = () => {
               <Link href="/ShoppingCart">Shopping Cart</Link>
             </li>
             <li>
-              <Link href="/Singleblog">Singleblog</Link>
-            </li>
-            <li>
               <Link href="/HektoDemo">Hekto Demo</Link>
             </li>
             <li>
